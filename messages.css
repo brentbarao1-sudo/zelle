@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Pacifico&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    padding: 35px 20px;
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+    background: linear-gradient(135deg, #ffd6e8, #e3d1ff);
+    color: #666;
+    overflow-x: hidden;
+}
+
+/* Navigation buttons */
+a {
+    display: inline-block;
+    margin: 8px 5px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    background: white;
+    color: #d95791;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(200, 120, 180, 0.15);
+    transition: 0.3s;
+}
+
+a:hover {
+    background: #ff9fc8;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Birthday message title */
+h1 {
+    max-width: 900px;
+    margin: 55px auto 25px;
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    line-height: 1.4;
+    color: #e45b9b;
+    text-shadow: 2px 2px white;
+}
+
+/* Message card */
+p {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 4px solid #ffb6d5;
+    border-radius: 25px;
+    box-shadow: 0 12px 30px rgba(150, 100, 180, 0.2);
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: left;
+    color: #666;
+    white-space: pre-line;
+    overflow-wrap: break-word;
+}
+
+/* Small heart decoration */
+p::before {
+    content: "♡";
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 40px;
+    color: #e45b9b;
+}
+
+/* Mobile design */
+@media screen and (max-width: 600px) {
+
+    body {
+        padding: 20px 12px;
+    }
+
+    /* Navigation buttons */
+    a {
+        margin: 5px 2px;
+        padding: 8px 11px;
+        font-size: 13px;
+    }
+
+    /* Birthday message title */
+    h1 {
+        margin: 35px auto 20px;
+        font-size: 28px;
+        line-height: 1.4;
+        overflow-wrap: break-word;
+    }
+
+    /* Message card */
+    p {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 16px;
+        font-size: 16px;
+        line-height: 1.7;
+        text-align: left;
+    }
+
+    p::before {
+        font-size: 32px;
+    }
+}
